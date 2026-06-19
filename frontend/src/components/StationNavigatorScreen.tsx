@@ -56,7 +56,7 @@ export default function StationNavigatorScreen({ onBack, isOnline, lang = 'en' }
         fetch((import.meta.env.VITE_API_URL || '') + '/api/searches', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ featureName: 'Station Navigator', searchQuery: station })
+          body: JSON.stringify({ featureName: 'Station Navigator', searchQuery: stationName })
         });
       } catch (e) {}
 

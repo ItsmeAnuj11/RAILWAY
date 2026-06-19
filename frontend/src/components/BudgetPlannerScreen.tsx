@@ -56,7 +56,7 @@ export default function BudgetPlannerScreen({ onBack, isOnline, lang = 'en' }: B
         fetch((import.meta.env.VITE_API_URL || '') + '/api/searches', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ featureName: 'Budget Planner', searchQuery: budget })
+          body: JSON.stringify({ featureName: 'Budget Planner', searchQuery: tripDetails })
         });
       } catch (e) {}
 

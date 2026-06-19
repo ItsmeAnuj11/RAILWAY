@@ -56,7 +56,7 @@ export default function SafetyGuardScreen({ onBack, isOnline, lang = 'en' }: Saf
         fetch((import.meta.env.VITE_API_URL || '') + '/api/searches', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ featureName: 'Safety Guard', searchQuery: pnr })
+          body: JSON.stringify({ featureName: 'Safety Guard', searchQuery: coachDetail })
         });
       } catch (e) {}
 

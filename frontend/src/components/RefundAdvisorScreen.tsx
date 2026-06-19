@@ -39,7 +39,7 @@ export default function RefundAdvisorScreen({ onBack, isOnline, lang = 'en' }: R
         fetch((import.meta.env.VITE_API_URL || '') + '/api/searches', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ featureName: 'Refund Advisor', searchQuery: pnr })
+          body: JSON.stringify({ featureName: 'Refund Advisor', searchQuery: details })
         });
       } catch (e) {}
 
